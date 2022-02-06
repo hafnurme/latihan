@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
+    font-weight: 500;
+    width: 945px;
+    height: 675px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: repeat(8, 80px);
+    grid-template-columns: repeat(10, 90px);
+    grid-template-areas: "tl tl tl tl tl tl tl tl tl tl"
+                         "pt pt pt pt pt pt pt pt sb sb"
+                         "pm pm mc mc mc mc mc mc sb sb"
+                         "pm pm mc mc mc mc mc mc ad ad"
+                         "pm pm mi mi mi mi mi mi ad ad"
+                         "pm pm mi mi mi mi mi mi os os"
+                         "pm pm mi mi mi mi mi mi os os"
+                         "fo fo fo fo fo fo fo fo fo fo";
+    gap: 5px;
+    background-color: rgb(255, 236, 211);
+    border: 5px solid rgb(255, 236, 211);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box.tl {
+    grid-area: tl;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+}
+.box.pt {
+    grid-area: pt;
+    background-color: darkcyan;
+}
+.box.sb {
+    grid-area: sb;
+    background-color: darkgoldenrod;
+}
+.box.mc {
+    grid-area: mc;
+    background-color: darkslateblue;
+}
+.box.ad {
+    grid-area: ad;
+    background-color: darkkhaki;
+}
+.box.pm {
+    grid-area: pm;
+    background-color: darkorange;
+}
+.box.mi {
+    grid-area: mi;
+    background-color: darksalmon;
+}
+.box.fo {
+    grid-area: fo;
+    background: dimgray;
+}
+.box.os {
+    grid-area: os;
+    background-color: firebrick;
+}
+
+.box.tl div {
+    
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav .link1 {
+    background-color: darkcyan;
+    border-right: 5px solid rgb(255, 236, 211);
+}
+
+.nav .link3 {
+    background-color: darkcyan;
+}
