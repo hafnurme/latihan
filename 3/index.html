@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Absolute SUM</title>
+  <link rel="stylesheet" href="css/indexstyle.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Absolute SUM</h1>
+    <div class="main">
+      <div class="input">
+        <div class="ma">
+          <label class="dis" for="angka">Masukkan Angka Ke Array</label>
+          <input class="dis inbo" type="number" name="angka" id="angka" value="0" />
+          <button for="angka" class="inbtn" onclick="kirim()">Kirim</button>
+        </div>
+        <div class="note">
+          <h4>Note :</h4>
+          <p>Isi hanya angka(negatif/positif), jangan kirim field kosong.</p>
+          <span>Dibuat dengan HTML, CSS, JS.</span>
+        </div>
+      </div>
+      <div class="output">
+        <span class="dis">Array</span>
+        <div class="dis tarray">
+          <span id="daray"></span>
+        </div>
+        <span class="dis">Hasil</span>
+        <div class="dis hasil">
+          <span id="hasil"></span>
+        </div>
+        <button class="inbtn" onclick="hasil()">Hasil</button>
+        <button class="inbtn" onclick="window.location.reload()">
+          Clear
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/indexscript.js"></script>
+</body>
+
+</html>
